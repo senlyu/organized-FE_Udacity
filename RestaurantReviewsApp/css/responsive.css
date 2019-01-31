@@ -1,0 +1,49 @@
+
+@media screen and (min-width: 900px) {
+
+	/* change flex to row and wrap some item together*/
+	#restaurants-list {
+	  display: flex;
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  align-items: center;
+	}
+
+	/* large screen so set more space for the map */
+	.inside #map-container {
+		height: 80%;
+	}
+
+	/* because we have enough space, leave some space for map*/
+
+	#restaurant-container {
+		top: 300px;
+		border: 0px;
+		/* not set to 100%, because I like it this way */
+		max-width: 900px;
+
+	}
+
+	/* organize the space, move the address and time from bottom to the left*/
+
+	#restaurant-container-inner {
+	  display: flex;
+	  flex-direction: row;
+	}
+	#restaurant-container-inner1, #restaurant-container-inner2 {
+		width: 50%;
+	}
+	#restaurant-address {
+		height: 60px;
+		padding: 30px;
+	}
+	#restaurant-hours {
+		margin: 0 30px;
+	}
+
+    /* need to set a fixed footer */
+	#footer {
+		position: fixed;
+		bottom: 0; left: 0;
+	}
+}
